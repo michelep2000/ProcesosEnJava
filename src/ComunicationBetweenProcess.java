@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class ComunicationBetweenProcess {
+public class ComunicationBetweenProcess { // DANIEL VERA MARTINEZ
 	public static void main(String args[]) {
 		try { // C) Creo el Try
 			Process process = new ProcessBuilder(args).start();
