@@ -2,16 +2,19 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class RunProcess { // DANIEL VERA MARTINEZ
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException { // COMENTARIOS AL FINAL EN ORDEN.
 		if (args.length <= 0) {
 			System.err.println("Se necesita un programa a ejecutar");
 			System.exit(-1);
 		}
 		ProcessBuilder pb = new ProcessBuilder(args);
 		try {
+			int a=0;
+			for (int i = 1; i > a; i++) {
 			Process process = pb.start();
 			int retorno = process.waitFor();
-			System.out.println("La ejecución de " + Arrays.toString(args) + " devuelve " + retorno);
+			System.out.println("La ejecución de " + Arrays.toString(args) + "devuelve " + retorno);
+			}
 		} catch (IOException ex) {
 			System.err.println("Excepción de E/S!!");
 			System.exit(-1);
