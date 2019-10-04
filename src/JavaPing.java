@@ -52,7 +52,7 @@ class JavaPing {
 		System.exit(0);
 	}
 }
-//lo primero es que si ejecutamos con el args vacio nos suelta un error en la linea 8, porque no podemos llamar a args[0] si esta vacio
+//lo primero es que si ejecutamos con el args vacio nos suelta un error en la linea donde "process = runTime.exec("Ping " + args[0])", porque no podemos llamar a args[0] si esta vacio
 
 /*
  * Saludo Saludo Pinging 255.255.255.0 with 32 bytes of data: Saludo PING:
