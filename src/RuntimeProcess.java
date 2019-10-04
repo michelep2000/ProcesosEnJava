@@ -1,3 +1,5 @@
+
+//Michele Pardo
 import java.io.IOException;
 
 public class RuntimeProcess {
@@ -11,8 +13,11 @@ public class RuntimeProcess {
 			Process process = runtime.exec(args);
 			process.destroy();
 		} catch (IOException ex) {
-			System.err.println("Excepción de E/S!!");
+			System.err.println("ExcepciÃ³n de E/S!!");
 			System.exit(-1);
 		}
 	}
 }
+
+//a) El programa se ejecuta lo que pasa es que con el metodo destroy destruimos el proceso es forzado a terminar, por lo cual por eso no aparece
+//b) Ya comentando esa linea "process.destroy();" el programa se ejecuta correctamente
